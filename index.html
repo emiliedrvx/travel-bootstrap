@@ -7,9 +7,31 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts via @import in style.css -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Bootstrap Icons (bonus) -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+      background-color: #f8f9fa;
+    }
+    h2 {
+      letter-spacing: 1px;
+    }
+    .section-title {
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    .form-container {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body class="bg-light">
@@ -57,55 +79,31 @@
       </button>
     </div>
 
-    <!-- Section design inspired by mockup -->
+    <!-- Section: Explore -->
     <section class="text-center mb-5">
-      <h2 class="text-uppercase text-primary mb-4">Explore the World</h2>
+      <h2 class="text-uppercase text-primary fw-bold section-title">Explore the World</h2>
       <p class="text-secondary mb-5">Unique adventures, unforgettable landscapes and lifelong memories await you.</p>
-      <div class="row text-start">
+      <div class="row justify-content-center text-center">
         <div class="col-md-4 mb-4">
-          <h5 class="text-dark">Nature Escapes</h5>
+          <h5 class="fw-bold">Nature Escapes</h5>
           <p>Dive into lush forests, paradise beaches and breathtaking hikes.</p>
         </div>
         <div class="col-md-4 mb-4">
-          <h5 class="text-dark">Cultural Discoveries</h5>
+          <h5 class="fw-bold">Cultural Discoveries</h5>
           <p>Immerse yourself in fascinating civilizations and authentic traditions.</p>
         </div>
         <div class="col-md-4 mb-4">
-          <h5 class="text-dark">Urban Adventures</h5>
+          <h5 class="fw-bold">Urban Adventures</h5>
           <p>Explore vibrant and modern cities, where gastronomy meets architecture.</p>
         </div>
       </div>
+      <a class="btn btn-info text-white px-4 py-2 mt-3" href="#formulaire">Learn more <i class="bi bi-info-circle"></i></a>
     </section>
-
-    <!-- Modal Trigger -->
-    <div class="text-center mb-5">
-      <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
-        Learn more <i class="bi bi-info-circle"></i>
-      </button>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="infoModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">About Our Trips</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            Our trips are designed for all styles: adventure, relaxation, and culture. We take care of everything so you can enjoy a seamless and emotional experience.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Form -->
     <section id="formulaire" class="mb-5">
-      <h2 class="text-center mb-4 text-primary">Book Your Trip</h2>
-      <form class="needs-validation" novalidate>
+      <h2 class="text-center text-primary section-title">Book Your Trip</h2>
+      <form class="needs-validation form-container" novalidate>
         <div class="mb-3">
           <label for="name" class="form-label">Full Name</label>
           <input type="text" class="form-control" id="name" required>
@@ -121,7 +119,7 @@
           <input type="number" class="form-control" id="age" min="12" max="99" required>
           <div class="invalid-feedback">Please enter a valid age (between 12 and 99).</div>
         </div>
-        <button class="btn btn-custom" type="submit">Submit</button>
+        <button class="btn btn-custom btn-primary w-100" type="submit">Submit</button>
       </form>
     </section>
   </main>
@@ -151,4 +149,3 @@
   </script>
 </body>
 </html>
-Add full HTML content
