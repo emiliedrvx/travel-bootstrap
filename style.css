@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Photo Créatif</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts via @import in style.css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons (bonus) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Photo Atelier</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#carousel">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formulaire">Inscription</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mt-5">
+
+    <!-- Carousel -->
+    <div id="carousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/id/1015/1200/400" class="d-block w-100 rounded" alt="Nature">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/1005/1200/400" class="d-block w-100 rounded" alt="Portrait">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/1011/1200/400" class="d-block w-100 rounded" alt="Studio">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Section design inspirée du modèle -->
+    <section class="text-center mb-5">
+      <h2 class="text-uppercase text-primary mb-4">Let Your Home Be Unique</h2>
+      <p class="text-secondary mb-5">There are many variations of the passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+      <div class="row text-start">
+        <div class="col-md-4 mb-4">
+          <h5 class="text-dark">Interior Work</h5>
+          <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="text-dark">Retail Design</h5>
+          <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="text-dark">Furniture Design</h5>
+          <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Trigger -->
+    <div class="text-center mb-5">
+      <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
+        En savoir plus <i class="bi bi-info-circle"></i>
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Informations sur nos ateliers</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Nos ateliers couvrent plusieurs styles : photographie de nature, de portrait et studio. Chaque session dure 2h et est encadrée par un professionnel.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulaire -->
+    <section id="formulaire" class="mb-5">
+      <h2 class="text-center mb-4 text-primary">Inscription Atelier</h2>
+      <form class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom complet</label>
+          <input type="text" class="form-control" id="name" required>
+          <div class="invalid-feedback">Veuillez entrer votre nom complet.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Une adresse valide est requise.</div>
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" class="form-control" id="age" min="12" max="99" required>
+          <div class="invalid-feedback">Veuillez entrer un âge valide (entre 12 et 99 ans).</div>
+        </div>
+        <button class="btn btn-custom" type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 Atelier Photo Créatif | contact@photoatelier.com</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script de validation -->
+  <script>
+    (() => {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
