@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atelier Photo Créatif</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unforgettable Travels</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
+
+  <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Photo Atelier</a>
+        <a class="navbar-brand" href="#">Unforgettable Travels</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#carousel">Galerie</a></li>
-            <li class="nav-item"><a class="nav-link" href="#formulaire">Inscription</a></li>
+            <li class="nav-item"><a class="nav-link" href="#carousel">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tours">Our Tours</a></li>
+            <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
             <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
           </ul>
         </div>
@@ -31,18 +34,20 @@
     </nav>
   </header>
 
+  <!-- Main -->
   <main class="container mt-5">
+
     <!-- Carousel -->
     <div id="carousel" class="carousel slide mb-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1519183071298-a2962be90b8e" class="d-block w-100 rounded" alt="Nature" />
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="d-block w-100 rounded" alt="Beach">
         </div>
         <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" class="d-block w-100 rounded" alt="Portrait" />
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="d-block w-100 rounded" alt="Mountains">
         </div>
         <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" class="d-block w-100 rounded" alt="Studio" />
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" class="d-block w-100 rounded" alt="City">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -53,22 +58,22 @@
       </button>
     </div>
 
-    <!-- Section ateliers -->
-    <section class="text-center mb-5">
-      <h2 class="text-uppercase text-primary mb-4">Nos Ateliers Photo</h2>
-      <p class="text-secondary mb-5">Découvrez nos thématiques d’ateliers pour tous les styles de photographes.</p>
-      <div class="row text-start">
+    <!-- Section: Our Tours -->
+    <section id="tours" class="text-center mb-5">
+      <h2 class="text-uppercase text-primary mb-4">Our Tours</h2>
+      <p class="text-secondary mb-4">Choose the experience that suits you: adventure, culture, or nature.</p>
+      <div class="row">
         <div class="col-md-4 mb-4">
-          <h5 class="text-dark">Portrait Studio</h5>
-          <p>Maîtrisez les jeux de lumière, les poses et les fonds en studio professionnel.</p>
+          <h5 class="text-dark">🌍 Adventure Travel</h5>
+          <p>Explore mountains, deserts, and jungles with guided expeditions.</p>
         </div>
         <div class="col-md-4 mb-4">
-          <h5 class="text-dark">Photographie de rue</h5>
-          <p>Apprenez à capturer l’instant et les scènes de la vie quotidienne dans un cadre urbain.</p>
+          <h5 class="text-dark">🏛️ Cultural Discovery</h5>
+          <p>Dive into the heritage, architecture, and traditions of unique cities.</p>
         </div>
         <div class="col-md-4 mb-4">
-          <h5 class="text-dark">Nature & Paysage</h5>
-          <p>Initiez-vous aux réglages pour photographier les paysages et la faune en extérieur.</p>
+          <h5 class="text-dark">🌿 Nature Escape</h5>
+          <p>Relax in natural landscapes: forests, beaches, and lakeside cabins.</p>
         </div>
       </div>
     </section>
@@ -76,7 +81,7 @@
     <!-- Modal Trigger -->
     <div class="text-center mb-5">
       <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#infoModal">
-        En savoir plus <i class="bi bi-info-circle"></i>
+        Learn more <i class="bi bi-info-circle"></i>
       </button>
     </div>
 
@@ -85,46 +90,46 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Informations sur nos ateliers</h5>
+            <h5 class="modal-title">About Our Services</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            Chaque atelier dure 2h, comprend une introduction théorique, une session pratique et un retour sur vos clichés. Le matériel peut être fourni sur demande.
+            Each tour includes a certified guide, transport, and full itinerary. You’ll enjoy safety, comfort, and a rich cultural experience no matter the destination.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Formulaire -->
-    <section id="formulaire" class="mb-5">
-      <h2 class="text-center mb-4 text-primary">Inscription Atelier</h2>
+    <!-- Booking Form -->
+    <section id="booking" class="mb-5">
+      <h2 class="text-center mb-4 text-primary">Book a Tour</h2>
       <form class="needs-validation" novalidate>
         <div class="mb-3">
-          <label for="name" class="form-label">Nom complet</label>
+          <label for="name" class="form-label">Full Name</label>
           <input type="text" class="form-control" id="name" required />
-          <div class="invalid-feedback">Veuillez entrer votre nom complet.</div>
+          <div class="invalid-feedback">Please enter your full name.</div>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" required />
-          <div class="invalid-feedback">Une adresse email valide est requise pour recevoir les détails de l’atelier.</div>
+          <div class="invalid-feedback">A valid email address is required to receive your confirmation.</div>
         </div>
         <div class="mb-3">
-          <label for="age" class="form-label">Âge</label>
+          <label for="age" class="form-label">Age</label>
           <input type="number" class="form-control" id="age" min="12" max="99" required />
-          <div class="invalid-feedback">L’atelier est ouvert aux personnes âgées de 12 à 99 ans.</div>
+          <div class="invalid-feedback">Participants must be between 12 and 99 years old.</div>
         </div>
-        <button class="btn btn-custom" type="submit">Envoyer</button>
+        <button class="btn btn-custom" type="submit">Submit</button>
       </form>
     </section>
   </main>
 
   <!-- Footer -->
   <footer id="footer" class="bg-dark text-white text-center p-3">
-    <p>&copy; 2025 Atelier Photo Créatif | contact@photoatelier.com</p>
+    <p>&copy; 2025 Unforgettable Travels | contact@travelsite.com</p>
   </footer>
 
   <!-- Bootstrap JS -->
